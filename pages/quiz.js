@@ -1,4 +1,4 @@
-import Reasct from 'react'
+import React from 'react'
 
 export default function QuizPage() {
     return (

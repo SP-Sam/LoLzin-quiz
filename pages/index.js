@@ -1,3 +1,4 @@
+import React from 'react'
 import styled from 'styled-components'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
@@ -44,22 +45,22 @@ export default function Home() {
               Teste o quão profudamente você conhece o League of Legends
               com esse super quiz.
             </p>
+
             <form onSubmit={function (infosDoEvento) {
               infosDoEvento.preventDefault()
               router.push(`/quiz?name=${name}`)
-
               console.log('Fazendo uma submissão por meio do react')
             }}>
-              <input 
+              <input
                 onChange={function (infosDoEvento) {
                   console.log(infosDoEvento.target.value)
-                  //name = infosDoEvento.target.value
                   setName(infosDoEvento.target.value)
                 }}
                 placeholder="Qual é seu nome?"
               />
+
               <button type="submit" disabled={name.length === 0}>
-                GG, {name}
+                Vamos jogar, {name}!
               </button>
             </form>
           </Widget.Content>
@@ -78,7 +79,7 @@ export default function Home() {
         <Footer/>
       </QuizContainer>
 
-      <GitHubCorner projectUrl='https://github.com/SP-Sam'/>
+      <GitHubCorner projectUrl='https://github.com/SP-Sam/LoLzin-quiz'/>
     </QuizBackground>
   )
 }
