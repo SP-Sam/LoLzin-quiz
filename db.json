@@ -33,7 +33,7 @@
     "theme": {
       "colors": {
         "primary": "#9c00ff",
-        "secondary": "#009cff",
+        "secondary": "#1E90FF",
         "mainBg": "#412a4f",
         "contrastText": "#FFFFFF",
         "wrong": "#ff0000",
