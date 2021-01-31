@@ -1,8 +1,8 @@
 {
     "bg": "https://wallpapercave.com/wp/wp2635081.png",
-    "title": "Quiz de LoLzinho de Samuel Pereira",
+    "title": "League of Legends Quiz",
     "logo": "https://logodownload.org/wp-content/uploads/2014/09/lol-league-of-Legends-logo.png",
-    "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+    "description": "Teste o quão profudamente você conhece o League of Legends com esse super quiz.",
     "questions": [
       {
         "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
@@ -28,7 +28,8 @@
       }
     ],
     "external": [
-      ""
+      "https://alura-quiz-base.abnner13.vercel.app/",
+      "https://imersao-react-nextjs.fallying.vercel.app/"
     ],
     "theme": {
       "colors": {
