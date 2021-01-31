@@ -1,29 +1,70 @@
 {
     "bg": "https://wallpapercave.com/wp/wp2635081.png",
+    "loading": "https://media.giphy.com/media/j5iaBj5y45oOS2MQKn/giphy.gif",
+    "right": "https://media.giphy.com/media/U8GROUk906RzOuI9K4/giphy.gif",
+    "wrong": "https://media.giphy.com/media/3og0IvGtnDyPHCRaYU/giphy.gif",
     "title": "League of Legends Quiz",
     "logo": "https://logodownload.org/wp-content/uploads/2014/09/lol-league-of-Legends-logo.png",
     "description": "Teste o quão profudamente você conhece o League of Legends com esse super quiz.",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
-        "description": "Essa é pra aquecer",
+        "image": "https://media.giphy.com/media/QsVVtgvahqsHPDJRCI/giphy.gif",
+        "title": "Seu lugar é ________",
+        "description": "De leve pra começar" ,
         "answer": 2,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "em casa",
+          "na cova",
+          "no museu",
+          "no inferno"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
+        "image": "https://media.giphy.com/media/l0K43RPRCJ5BQIUJW/giphy.gif",
+        "title": "Quem é o(a) principal rival de Jinx?",
+        "description": "",
+        "answer": 1,
+        "alternatives": [
+           "Graves",
+           "Vi",
+           "Viktor",
+           "Tristana"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/POHBUmd2WFpbbpHQmB/giphy.gif",
+        "title": "Draven pode rodar até quantos machados ao mesmo tempo?",
+        "description": "São mais do que você imagina",
+        "answer": 2,
+        "alternatives": [
+           "1",
+           "2",
+           "3",
+           "4"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/hPr664TvIHJw9GsbG1/giphy.gif",
+        "title": "Qual é o verdadeiro nome do Red?",
+        "description": "",
+        "answer": 3,
+        "alternatives": [
+           "Monstro de lava",
+           "Golem Vermelho",
+           "Rúbia",
+           "Rubrivira"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/Sdcp7455fY4yWWJEp0/giphy.gif",
+        "title": "Qual desses campeões não fica INVISÍVEL?",
+        "description": "Atenção",
         "answer": 0,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+           "Evelyn",
+           "Teemo",
+           "Shaco",
+           "Kha'Zix"
         ]
       }
     ],
@@ -38,7 +79,7 @@
         "mainBg": "#412a4f",
         "contrastText": "#FFFFFF",
         "wrong": "#ff0000",
-        "success": "#0048ff"
+        "success": "#00FF00"
       },
       "borderRadius": "5px"
     }

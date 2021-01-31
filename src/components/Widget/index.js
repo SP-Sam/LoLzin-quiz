@@ -18,6 +18,10 @@ const Widget = styled.div`
     font-weight: 400;
     line-height: 0.95em;
   }
+
+  p h2 {
+    text-align: center;
+  }
 `
 
 Widget.Header = styled.header`

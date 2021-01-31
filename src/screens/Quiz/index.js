@@ -1,6 +1,5 @@
 import React from 'react';
-import { Lottie } from '@crello/react-lottie';
-// import db from '../../../db.json';
+import db from '../../../db.json';
 import Widget from '../../components/Widget';
 import Logo from '../../components/Logo';
 import QuizBackground from '../../components/QuizBackground';
@@ -9,30 +8,29 @@ import AlternativesForm from '../../components/AlternativesForm';
 import Button from '../../components/Button';
 import BackLinkArrow from '../../components/BackLinkArrow';
 
-import loadingAnimation from './animations/loading.json';
-
 function ResultWidget({ results }) {
   return (
     <Widget>
+      
       <Widget.Header>
+      <BackLinkArrow href="/" />
         Tela de Resultado:
       </Widget.Header>
 
       <Widget.Content>
         <p>
-          Você acertou
+          Respostas certas:
           {' '}
           {results.filter((x) => x).length}
-          {' '}
-          perguntas
         </p>
         <ul>
           {results.map((result, index) => (
             <li key={`result__${index}`}>
-              #
-              {index + 1}
+              Questão
               {' '}
-              Resultado:
+              {index + 1}
+              :
+              {' '}
               {result === true
                 ? 'Acertou'
                 : 'Errou'}
@@ -47,18 +45,16 @@ function ResultWidget({ results }) {
 function LoadingWidget() {
   return (
     <Widget>
-      <Widget.Header>
-        Carregando...
-      </Widget.Header>
-
-      <Widget.Content style={{ display: 'flex', justifyContent: 'center' }}>
-        <Lottie
-          width="200px"
-          height="200px"
-          className="lottie-container basic"
-          config={{ animationData: loadingAnimation, loop: true, autoplay: true }}
+      <p>
+        <h2>Carregando...</h2>
+      </p>
+        <img
+          style={{
+            width: '75%',
+            marginLeft: '50px',
+          }}
+          src={db.loading}
         />
-      </Widget.Content>
     </Widget>
   );
 }
@@ -94,6 +90,29 @@ function QuestionWidget({
         }}
         src={question.image}
       />
+
+      {isQuestionSubmited && isCorrect &&
+        <img
+          style={{
+            width: '40px',
+            height: '40px',
+            margin: '5px 0 -15px 150px'
+          }}
+          src={db.right}
+        />
+      }
+
+      {isQuestionSubmited && !isCorrect && 
+        <img
+        style={{
+          width: '40px',
+          height: '40px',
+          margin: '5px 0 -15px 150px'
+        }}
+        src={db.wrong}
+      />
+      }
+
       <Widget.Content>
         <h2>
           {question.title}
@@ -141,11 +160,12 @@ function QuestionWidget({
           {/* <pre>
             {JSON.stringify(question, null, 4)}
           </pre> */}
+
+          
           <Button type="submit" disabled={!hasAlternativeSelected}>
             Confirmar
           </Button>
-          {isQuestionSubmited && isCorrect && <p>Você acertou!</p>}
-          {isQuestionSubmited && !isCorrect && <p>Você errou!</p>}
+          
         </AlternativesForm>
       </Widget.Content>
     </Widget>
