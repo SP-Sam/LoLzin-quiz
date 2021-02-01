@@ -14,14 +14,16 @@ function ResultWidget({ results }) {
       
       <Widget.Header>
       <BackLinkArrow href="/" />
-        Tela de Resultado:
+        Resultado:
       </Widget.Header>
 
       <Widget.Content>
         <p>
-          Respostas certas:
-          {' '}
-          {results.filter((x) => x).length}
+          <h3>
+            Respostas certas:
+            {' '}
+            {results.filter((x) => x).length}
+          </h3>
         </p>
         <ul>
           {results.map((result, index) => (
@@ -31,9 +33,29 @@ function ResultWidget({ results }) {
               {index + 1}
               :
               {' '}
+              {' '}
               {result === true
-                ? 'Acertou'
-                : 'Errou'}
+                ? <img
+                    style={{
+                      width: '40px',
+                      height: '40px',
+                      position: 'relative',
+                      top: '13px'
+                    }}
+                    src={db.right}
+                  />
+                : <img
+                    style={{
+                      width: '35px',
+                      height: '35px',
+                      position: 'relative',
+                      top: '13px'
+                    }}
+                    src={db.wrong}
+                  />
+              }
+              <br/>
+              <br/>
             </li>
           ))}
         </ul>
@@ -51,7 +73,7 @@ function LoadingWidget() {
         <img
           style={{
             width: '75%',
-            marginLeft: '50px',
+            marginLeft: '45px',
           }}
           src={db.loading}
         />
@@ -96,7 +118,7 @@ function QuestionWidget({
           style={{
             width: '40px',
             height: '40px',
-            margin: '5px 0 -15px 150px'
+            margin: '10px 0 -15px 150px'
           }}
           src={db.right}
         />
@@ -107,7 +129,7 @@ function QuestionWidget({
         style={{
           width: '40px',
           height: '40px',
-          margin: '5px 0 -15px 150px'
+          margin: '10px 0 -15px 150px'
         }}
         src={db.wrong}
       />

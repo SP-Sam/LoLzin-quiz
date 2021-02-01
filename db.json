@@ -9,7 +9,7 @@
     "questions": [
       {
         "image": "https://media.giphy.com/media/QsVVtgvahqsHPDJRCI/giphy.gif",
-        "title": "Seu lugar é ________",
+        "title": "Seu lugar é ...",
         "description": "De leve pra começar" ,
         "answer": 2,
         "alternatives": [
@@ -70,7 +70,8 @@
     ],
     "external": [
       "https://alura-quiz-base.abnner13.vercel.app/",
-      "https://imersao-react-nextjs.fallying.vercel.app/"
+      "https://futking.caicke.vercel.app/",
+      "https://quiz.dgsdev.vercel.app/"
     ],
     "theme": {
       "colors": {
